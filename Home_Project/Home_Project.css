@@ -1,0 +1,257 @@
+/* HEADER */
+* {
+	margin: 0px;
+	padding: 0px;
+}			/* * dai dien cho tat ca class */
+
+ol, ul {
+	list-style-type: none;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+a:hover {
+	color: red;
+}
+div#layout {
+	border: 1px solid #a3a2a3;
+	margin: 20px auto;
+	width: 900px;
+}
+
+div#header {
+	padding: 10px;
+}
+
+div.hLeft {
+	float: left;
+}
+
+div.hLeft h1 {
+	padding-bottom: 20px;
+}
+
+div.hLeft p {
+	font-family: monospace;
+        padding-bottom: 5px;
+        font-size: 120%;
+}
+
+div.hRight {
+	float: right;
+	display: inline;
+}
+
+div.hRight ul.hButton {
+	text-align: right;
+	padding-bottom: 50px;
+}
+
+div.hRight ul.hButton li {
+	display: inline;
+}
+
+div.hRight ul.hLink {
+	text-align: right;
+}
+
+div.hRight ul.hLink li {
+	display: inline;
+	border-right: 1px solid #333;
+	padding: 0 5px;
+}
+
+div.hRight ul.hLink li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+/*Global Navigation */
+
+div#gNavi {
+	clear: both;
+        background-color: #333;
+        overflow: auto;
+}
+
+div#gNavi a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+        cursor: pointer;
+}
+
+div#gNavi a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+div#gNavi a.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+div#gNavi div.search-container {
+	float: right;
+}
+div#gNavi div.search-container input[type=text] {
+        padding: 8px;
+        border: none;
+        margin-top: 8px;
+        font-size: 13px;
+}
+
+div#gNavi div.search-container button {
+	float: right;
+        padding: 8px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background-color: #ddd;
+        font-size: 13px;
+        border: none;
+        cursor: pointer;
+}
+div#gNavi:after {
+	content: "";
+	clear: both;
+}
+
+/* Page Body*/
+div#pageBody {
+	padding: 20px 10px;
+}
+div#content {
+	float: left;
+	width: 620px;
+}
+
+div#content h2 {
+	border-bottom: 1px solid #666666;
+	font-size: 120%;
+        margin-bottom: 10px;
+}
+div#content div.newProduct{
+	margin-bottom: 20px;
+}
+div#content div.newProduct p.image{
+	float:left; 
+        width: 241px;
+}
+
+div#content div.newProduct div {
+	float: right;
+	width: 360px;
+}
+
+div#content div.newProduct div h3 {
+	color: #5870e6;
+        margin-bottom: 10px;
+}
+
+
+div#content ul.thumbList {
+	
+        background: #f9f8f8;
+        border: 1px solid #ebeaea;
+        clear: both;
+        padding: 10px 25px;    /*top and bottom : 10px , right and left : 25px;*/
+        margin-bottom: 20px;
+
+}
+
+div#content ul.thumbList li {
+	display: inline;
+	padding-right: 8px;
+
+}
+
+
+div#content dl.new dt {
+	padding-top: 10px;
+}
+div#content dl.new dd {
+	border-bottom: 1px dotted #ccc0c0;
+        padding-bottom: 10px;
+}
+div#sidebar {
+	float: right;
+	width: 240px;
+}
+
+div#sidebar h2 {
+	border-bottom: 1px solid #0d0c0c;
+	margin-bottom: 10px;
+        font-size: 120%;
+}
+div#sidebar ul.link {
+	list-style-type: square;
+        padding-left: 20px;
+
+}
+div#sidebar ul li 
+{
+	padding-bottom: 5px;
+}
+div#sidebar ul.banner li{
+	padding-top: 10px;
+}
+
+
+div#footer {
+	clear: both;
+        border-top: 1px solid #787a7c;
+        padding: 10px;
+}
+
+div#footer div.fLeft{
+	float: left;
+
+}
+
+div#footer div.fRight {
+	float: right;
+
+}
+
+div#footer div.fRight ul li {
+	display: inline;
+	border-right: 1px solid #285ae1;
+        padding-right: 5px;
+        margin-right: 5px;
+}
+div#footer div.fRight ul li:last-child {
+	border-right: none;
+        padding-right: 0;
+}
+div#footer div.fRight ul li a {
+	text-decoration: none;
+}
+
+div#footer div.fRight p {
+	text-align: right;
+        padding-top: 10px;
+}
+
+div#pageBody,
+div#content div.newProduct, 
+div#footer {
+	zoom: 1;
+}
+
+/* thu thuat clearfix : dieu khien khoang canh sau khi dung float */
+div#pageBody::after,
+div#content div.newProduct::after,
+div#footer::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height:0;
+	visibility: hidden;
+}
